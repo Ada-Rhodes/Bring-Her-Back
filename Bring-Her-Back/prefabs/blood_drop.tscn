@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://b5itohm1uyvra"]
+
+[ext_resource type="Script" uid="uid://d1awy60fx76fu" path="res://prefabs/blood_drop.gd" id="1_odwrp"]
+[ext_resource type="Texture2D" uid="uid://c7eyg6hlwcx7n" path="res://Assets/Sprites/blood drop.png" id="1_ohml0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_odwrp"]
+radius = 6.0
+height = 24.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yx171"]
+atlas = ExtResource("1_ohml0")
+region = Rect2(0, 0, 12, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhmtn"]
+atlas = ExtResource("1_ohml0")
+region = Rect2(12, 0, 12, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wt704"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yx171")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhmtn")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Blood Drop" type="Node2D" unique_id=381305153]
+script = ExtResource("1_odwrp")
+
+[node name="BloodDrop" type="RigidBody2D" parent="." unique_id=1743695993]
+position = Vector2(16, 260)
+gravity_scale = -1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BloodDrop" unique_id=713581182]
+shape = SubResource("CapsuleShape2D_odwrp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BloodDrop" unique_id=1956597155]
+sprite_frames = SubResource("SpriteFrames_wt704")
+frame_progress = 0.26842007
