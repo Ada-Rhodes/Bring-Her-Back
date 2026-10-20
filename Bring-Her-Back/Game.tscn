@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://cdef018wev6qv" path="res://Assets/Sounds/wa6.mp3" id="5_bisgb"]
 [ext_resource type="Texture2D" uid="uid://86yh8416lbsq" path="res://Assets/Keys/j-key.png" id="5_gwjdr"]
 [ext_resource type="Texture2D" uid="uid://nvb2n6gyrmg6" path="res://Assets/Keys/k-key.png" id="6_lvtmh"]
+[ext_resource type="Texture2D" uid="uid://cnbtqxhnor7u5" path="res://Assets/Sprites/blood drop outline.png" id="6_y5ctq"]
 [ext_resource type="Script" uid="uid://cutnj5denvq3r" path="res://key_s.gd" id="7_lvtmh"]
 [ext_resource type="Texture2D" uid="uid://cgywnhrfbgk0w" path="res://Assets/Keys/L-key.png" id="7_yyih5"]
 [ext_resource type="Texture2D" uid="uid://jvjmv3hh50th" path="res://Assets/Keys/colon-key.png" id="8_qjyg3"]
@@ -50,6 +51,10 @@ disabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key A" unique_id=1697709971]
 stream = ExtResource("5_bisgb")
 
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key A" unique_id=1511278136]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
+
 [node name="Key S" type="Sprite2D" parent="Buttons" unique_id=612567100]
 position = Vector2(48, 8)
 texture = ExtResource("2_2vekm")
@@ -63,6 +68,10 @@ disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key S" unique_id=1698509832]
 stream = ExtResource("8_y5ctq")
+
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key S" unique_id=984921522]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
 
 [node name="Key D" type="Sprite2D" parent="Buttons" unique_id=732655924]
 position = Vector2(80, 8)
@@ -78,6 +87,10 @@ disabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key D" unique_id=1276724256]
 stream = ExtResource("11_w7ht3")
 
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key D" unique_id=1326991833]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
+
 [node name="Key F" type="Sprite2D" parent="Buttons" unique_id=590894051]
 position = Vector2(112, 8)
 texture = ExtResource("4_yhmtn")
@@ -91,6 +104,10 @@ disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key F" unique_id=1857367584]
 stream = ExtResource("14_8ktx7")
+
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key F" unique_id=256113125]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
 
 [node name="Key J" type="Sprite2D" parent="Buttons" unique_id=188705831]
 position = Vector2(144, 8)
@@ -106,6 +123,10 @@ disabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key J" unique_id=2039098588]
 stream = ExtResource("17_hwsgv")
 
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key J" unique_id=314510840]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
+
 [node name="Key K" type="Sprite2D" parent="Buttons" unique_id=879407633]
 position = Vector2(176, 8)
 texture = ExtResource("6_lvtmh")
@@ -119,6 +140,10 @@ disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key K" unique_id=42666671]
 stream = ExtResource("20_gebyw")
+
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key K" unique_id=72306881]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
 
 [node name="Key L" type="Sprite2D" parent="Buttons" unique_id=784377286]
 position = Vector2(208, 8)
@@ -134,6 +159,10 @@ disabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key L" unique_id=370845968]
 stream = ExtResource("23_4my3f")
 
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key L" unique_id=2103445932]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")
+
 [node name="Key Colon" type="Sprite2D" parent="Buttons" unique_id=265064061]
 position = Vector2(240, 8)
 texture = ExtResource("8_qjyg3")
@@ -147,3 +176,7 @@ disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key Colon" unique_id=414516283]
 stream = ExtResource("26_aeq37")
+
+[node name="BloodDropOutline" type="Sprite2D" parent="Buttons/Key Colon" unique_id=751336263]
+position = Vector2(-1, 6)
+texture = ExtResource("6_y5ctq")

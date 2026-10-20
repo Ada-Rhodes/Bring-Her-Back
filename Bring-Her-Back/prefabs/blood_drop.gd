@@ -17,7 +17,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	local_pos = get_node("BloodDrop").position.y
-	if local_pos < 0:
+	if local_pos < -10:
 		var elapsed_time = Time.get_ticks_msec() - start_time
-		print("Time elapsed: ", elapsed_time, " ms")
+		#print("Time elapsed: ", elapsed_time, " ms")
 		queue_free()

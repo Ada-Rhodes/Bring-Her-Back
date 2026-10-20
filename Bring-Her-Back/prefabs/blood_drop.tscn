@@ -33,7 +33,7 @@ animations = [{
 script = ExtResource("1_odwrp")
 
 [node name="BloodDrop" type="RigidBody2D" parent="." unique_id=1743695993]
-position = Vector2(0, 260)
+position = Vector2(0, 275)
 gravity_scale = -0.57
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BloodDrop" unique_id=713581182]
