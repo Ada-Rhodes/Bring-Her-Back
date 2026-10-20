@@ -4,13 +4,28 @@
 [ext_resource type="Script" uid="uid://do4n6y51kf180" path="res://game-loop.gd" id="1_yx171"]
 [ext_resource type="Texture2D" uid="uid://bmn7n2c5ygh26" path="res://Assets/Keys/s-key.png" id="2_2vekm"]
 [ext_resource type="Script" uid="uid://d3lddg5fuil7w" path="res://buttons.gd" id="2_yhmtn"]
-[ext_resource type="AudioStream" uid="uid://c2jh22wq5hpl" path="res://Assets/Sounds/Wump.wav" id="3_yhmtn"]
 [ext_resource type="Texture2D" uid="uid://cjl8riokup8ku" path="res://Assets/Keys/d-key.png" id="3_yx171"]
+[ext_resource type="Script" uid="uid://csg66xiqoewvd" path="res://key_a.gd" id="4_gwjdr"]
 [ext_resource type="Texture2D" uid="uid://crqk7sh3282fi" path="res://Assets/Keys/f-key.png" id="4_yhmtn"]
+[ext_resource type="AudioStream" uid="uid://cdef018wev6qv" path="res://Assets/Sounds/wa6.mp3" id="5_bisgb"]
 [ext_resource type="Texture2D" uid="uid://86yh8416lbsq" path="res://Assets/Keys/j-key.png" id="5_gwjdr"]
 [ext_resource type="Texture2D" uid="uid://nvb2n6gyrmg6" path="res://Assets/Keys/k-key.png" id="6_lvtmh"]
+[ext_resource type="Script" uid="uid://cutnj5denvq3r" path="res://key_s.gd" id="7_lvtmh"]
 [ext_resource type="Texture2D" uid="uid://cgywnhrfbgk0w" path="res://Assets/Keys/L-key.png" id="7_yyih5"]
 [ext_resource type="Texture2D" uid="uid://jvjmv3hh50th" path="res://Assets/Keys/colon-key.png" id="8_qjyg3"]
+[ext_resource type="AudioStream" uid="uid://c2sgwnhi5jbga" path="res://Assets/Sounds/wa4.mp3" id="8_y5ctq"]
+[ext_resource type="Script" uid="uid://5jt5mlwmlgap" path="res://key_d.gd" id="9_yyih5"]
+[ext_resource type="Script" uid="uid://b2kdj7d361sjv" path="res://key_f.gd" id="11_qjyg3"]
+[ext_resource type="AudioStream" uid="uid://dkad6w17um0y0" path="res://Assets/Sounds/wa2.mp3" id="11_w7ht3"]
+[ext_resource type="Script" uid="uid://c8gaa6v7xrruh" path="res://key_j.gd" id="13_bvhbk"]
+[ext_resource type="AudioStream" uid="uid://bt2q7ywj2idkj" path="res://Assets/Sounds/wa0.mp3" id="14_8ktx7"]
+[ext_resource type="Script" uid="uid://d3bdhfhhbtpg2" path="res://key_k.gd" id="14_wuoie"]
+[ext_resource type="Script" uid="uid://ck4aixxoopkad" path="res://key_l.gd" id="16_bvhbk"]
+[ext_resource type="AudioStream" uid="uid://dvxyruuw27uxj" path="res://Assets/Sounds/wa1.mp3" id="17_hwsgv"]
+[ext_resource type="Script" uid="uid://lqquiern8nm8" path="res://key_colon.gd" id="18_cpsxm"]
+[ext_resource type="AudioStream" uid="uid://dpfma0gmpwet" path="res://Assets/Sounds/wa3.mp3" id="20_gebyw"]
+[ext_resource type="AudioStream" uid="uid://cwsivb12vub4a" path="res://Assets/Sounds/wa5.mp3" id="23_4my3f"]
+[ext_resource type="AudioStream" uid="uid://bjs88rlgaknlt" path="res://Assets/Sounds/wa7.mp3" id="26_aeq37"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg35m"]
 size = Vector2(32, 16)
@@ -24,6 +39,7 @@ script = ExtResource("2_yhmtn")
 [node name="Key A" type="Sprite2D" parent="Buttons" unique_id=16194927]
 position = Vector2(16, 8)
 texture = ExtResource("1_joorw")
+script = ExtResource("4_gwjdr")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key A" unique_id=40990239]
 
@@ -32,11 +48,12 @@ shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key A" unique_id=1697709971]
-stream = ExtResource("3_yhmtn")
+stream = ExtResource("5_bisgb")
 
 [node name="Key S" type="Sprite2D" parent="Buttons" unique_id=612567100]
 position = Vector2(48, 8)
 texture = ExtResource("2_2vekm")
+script = ExtResource("7_lvtmh")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key S" unique_id=218593809]
 
@@ -44,9 +61,13 @@ texture = ExtResource("2_2vekm")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key S" unique_id=1698509832]
+stream = ExtResource("8_y5ctq")
+
 [node name="Key D" type="Sprite2D" parent="Buttons" unique_id=732655924]
 position = Vector2(80, 8)
 texture = ExtResource("3_yx171")
+script = ExtResource("9_yyih5")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key D" unique_id=1475548821]
 
@@ -54,9 +75,13 @@ texture = ExtResource("3_yx171")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key D" unique_id=1276724256]
+stream = ExtResource("11_w7ht3")
+
 [node name="Key F" type="Sprite2D" parent="Buttons" unique_id=590894051]
 position = Vector2(112, 8)
 texture = ExtResource("4_yhmtn")
+script = ExtResource("11_qjyg3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key F" unique_id=1786576393]
 
@@ -64,9 +89,13 @@ texture = ExtResource("4_yhmtn")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key F" unique_id=1857367584]
+stream = ExtResource("14_8ktx7")
+
 [node name="Key J" type="Sprite2D" parent="Buttons" unique_id=188705831]
 position = Vector2(144, 8)
 texture = ExtResource("5_gwjdr")
+script = ExtResource("13_bvhbk")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key J" unique_id=605630487]
 
@@ -74,9 +103,13 @@ texture = ExtResource("5_gwjdr")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key J" unique_id=2039098588]
+stream = ExtResource("17_hwsgv")
+
 [node name="Key K" type="Sprite2D" parent="Buttons" unique_id=879407633]
 position = Vector2(176, 8)
 texture = ExtResource("6_lvtmh")
+script = ExtResource("14_wuoie")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key K" unique_id=687469722]
 
@@ -84,9 +117,13 @@ texture = ExtResource("6_lvtmh")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key K" unique_id=42666671]
+stream = ExtResource("20_gebyw")
+
 [node name="Key L" type="Sprite2D" parent="Buttons" unique_id=784377286]
 position = Vector2(208, 8)
 texture = ExtResource("7_yyih5")
+script = ExtResource("16_bvhbk")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key L" unique_id=899511680]
 
@@ -94,12 +131,19 @@ texture = ExtResource("7_yyih5")
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key L" unique_id=370845968]
+stream = ExtResource("23_4my3f")
+
 [node name="Key Colon" type="Sprite2D" parent="Buttons" unique_id=265064061]
 position = Vector2(240, 8)
 texture = ExtResource("8_qjyg3")
+script = ExtResource("18_cpsxm")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Key Colon" unique_id=733625283]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Key Colon/StaticBody2D" unique_id=310983489]
 shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Key Colon" unique_id=414516283]
+stream = ExtResource("26_aeq37")
