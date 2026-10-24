@@ -32,10 +32,218 @@
 [ext_resource type="AudioStream" uid="uid://d31gmbd6t7m2v" path="res://Assets/Sounds/Bass-G.wav" id="18_w2501"]
 [ext_resource type="Texture2D" uid="uid://der5n4etppvjx" path="res://Assets/Keys/Rune - L.png" id="19_jsoai"]
 [ext_resource type="Texture2D" uid="uid://dx22b2afc6scr" path="res://Assets/Keys/Rule - Col.png" id="20_bisgb"]
+[ext_resource type="Script" uid="uid://bxyix8xbndrc2" path="res://key_n.gd" id="21_5he1h"]
 [ext_resource type="AudioStream" uid="uid://das6xwt51jjm6" path="res://Assets/Sounds/Bass-E.wav" id="22_bisgb"]
+[ext_resource type="Texture2D" uid="uid://bmf5ebf230etb" path="res://Assets/Keys/Rune - N.png" id="22_xwkxq"]
+[ext_resource type="Texture2D" uid="uid://djjbeix31cgkb" path="res://Assets/Sprites/her keyframes.png" id="34_suycs"]
+[ext_resource type="Script" uid="uid://b2s4vq7o4fnc5" path="res://her_body.gd" id="35_202ut"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg35m"]
-size = Vector2(16, 16)
+size = Vector2(16, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_202ut"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5he1h"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwkxq"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdm1y"]
+atlas = ExtResource("34_suycs")
+region = Rect2(768, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxy8k"]
+atlas = ExtResource("34_suycs")
+region = Rect2(1024, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t1a5"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8576b"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68r7h"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vltt"]
+atlas = ExtResource("34_suycs")
+region = Rect2(768, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fj2yu"]
+atlas = ExtResource("34_suycs")
+region = Rect2(1024, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iueff"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7324"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6tbt"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5dxo"]
+atlas = ExtResource("34_suycs")
+region = Rect2(768, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyvha"]
+atlas = ExtResource("34_suycs")
+region = Rect2(1024, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xc54d"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w250u"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3h3yf"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyc7o"]
+atlas = ExtResource("34_suycs")
+region = Rect2(768, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds8mp"]
+atlas = ExtResource("34_suycs")
+region = Rect2(1024, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbwgg"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndmee"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lua15"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qirsl"]
+atlas = ExtResource("34_suycs")
+region = Rect2(768, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnh27"]
+atlas = ExtResource("34_suycs")
+region = Rect2(1024, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw735"]
+atlas = ExtResource("34_suycs")
+region = Rect2(0, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvv74"]
+atlas = ExtResource("34_suycs")
+region = Rect2(256, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l0qi"]
+atlas = ExtResource("34_suycs")
+region = Rect2(512, 1200, 256, 240)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oinav"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_202ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5he1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwkxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdm1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxy8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t1a5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8576b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68r7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vltt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fj2yu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iueff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7324")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6tbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5dxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyvha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xc54d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w250u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3h3yf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyc7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds8mp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbwgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndmee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lua15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qirsl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnh27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yw735")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvv74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l0qi")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D" unique_id=983887579]
 script = ExtResource("1_yx171")
@@ -49,11 +257,10 @@ position = Vector2(12, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("4_gwjdr")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/A - Target Ring" unique_id=40990239]
+[node name="Area2D" type="Area2D" parent="Buttons/A - Target Ring" unique_id=1061036904]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/A - Target Ring/StaticBody2D" unique_id=2131473441]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/A - Target Ring/Area2D" unique_id=2131473441]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/A - Target Ring" unique_id=1697709971]
 stream = ExtResource("5_gebyw")
@@ -66,15 +273,14 @@ texture = ExtResource("6_joorw")
 texture = ExtResource("7_2vekm")
 
 [node name="S - Target Ring" type="Sprite2D" parent="Buttons" unique_id=875887354]
-position = Vector2(36, 0)
+position = Vector2(34, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("7_lvtmh")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/S - Target Ring" unique_id=1211242867]
+[node name="Area2D" type="Area2D" parent="Buttons/S - Target Ring" unique_id=244786967]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/S - Target Ring/StaticBody2D" unique_id=1051454202]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/S - Target Ring/Area2D" unique_id=229227331]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/S - Target Ring" unique_id=871263690]
 stream = ExtResource("8_4my3f")
@@ -87,15 +293,14 @@ texture = ExtResource("8_gwjdr")
 texture = ExtResource("7_2vekm")
 
 [node name="D - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1310602918]
-position = Vector2(60, 0)
+position = Vector2(56, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("9_yyih5")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/D - Target Ring" unique_id=1608827842]
+[node name="Area2D" type="Area2D" parent="Buttons/D - Target Ring" unique_id=972150611]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/D - Target Ring/StaticBody2D" unique_id=1981425137]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/D - Target Ring/Area2D" unique_id=1983720153]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/D - Target Ring" unique_id=35226729]
 stream = ExtResource("10_aeq37")
@@ -108,15 +313,15 @@ texture = ExtResource("9_lvtmh")
 texture = ExtResource("7_2vekm")
 
 [node name="F - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1081905276]
+visible = false
 position = Vector2(84, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("11_qjyg3")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/F - Target Ring" unique_id=1407537157]
+[node name="Area2D" type="Area2D" parent="Buttons/F - Target Ring" unique_id=1493744805]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/F - Target Ring/StaticBody2D" unique_id=877921362]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/F - Target Ring/Area2D" unique_id=830385960]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/F - Target Ring" unique_id=2072485214]
 stream = ExtResource("10_lvtmh")
@@ -128,16 +333,35 @@ texture = ExtResource("10_yyih5")
 [node name="Target Drop" type="Sprite2D" parent="Buttons/F - Target Ring" unique_id=1063174083]
 texture = ExtResource("7_2vekm")
 
+[node name="v - Target Ring" type="Sprite2D" parent="Buttons" unique_id=756003796]
+visible = false
+position = Vector2(108, 0)
+texture = ExtResource("3_3mrqo")
+
+[node name="Area2D" type="Area2D" parent="Buttons/v - Target Ring" unique_id=1854235230]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/v - Target Ring/Area2D" unique_id=503614723]
+shape = SubResource("RectangleShape2D_yg35m")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/v - Target Ring" unique_id=1824065839]
+stream = ExtResource("10_lvtmh")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/v - Target Ring" unique_id=1820780306]
+position = Vector2(0, -16)
+texture = ExtResource("10_yyih5")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/v - Target Ring" unique_id=598474471]
+texture = ExtResource("7_2vekm")
+
 [node name="Space - Target Ring" type="Sprite2D" parent="Buttons" unique_id=553866563]
 position = Vector2(128, 0)
 texture = ExtResource("17_aeq37")
 script = ExtResource("13_hmewc")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Space - Target Ring" unique_id=258302125]
+[node name="Area2D" type="Area2D" parent="Buttons/Space - Target Ring" unique_id=1910872265]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Space - Target Ring/StaticBody2D" unique_id=1979629160]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Space - Target Ring/Area2D" unique_id=762407398]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Space - Target Ring" unique_id=1626331230]
 stream = ExtResource("5_3mrqo")
@@ -149,16 +373,35 @@ texture = ExtResource("12_elkpi")
 [node name="Target Drop" type="Sprite2D" parent="Buttons/Space - Target Ring" unique_id=1077802321]
 texture = ExtResource("16_8ktx7")
 
+[node name="N - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1190523619]
+position = Vector2(156, 0)
+texture = ExtResource("3_3mrqo")
+script = ExtResource("21_5he1h")
+
+[node name="Area2D" type="Area2D" parent="Buttons/N - Target Ring" unique_id=1399393050]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/N - Target Ring/Area2D" unique_id=11416525]
+shape = SubResource("RectangleShape2D_yg35m")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/N - Target Ring" unique_id=168027174]
+stream = ExtResource("10_lvtmh")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/N - Target Ring" unique_id=1408551879]
+position = Vector2(0, -16)
+texture = ExtResource("22_xwkxq")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/N - Target Ring" unique_id=852387245]
+texture = ExtResource("7_2vekm")
+
 [node name="J - Target Ring" type="Sprite2D" parent="Buttons" unique_id=2055406348]
-position = Vector2(172, 0)
+position = Vector2(178, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("13_bvhbk")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/J - Target Ring" unique_id=1627797977]
+[node name="Area2D" type="Area2D" parent="Buttons/J - Target Ring" unique_id=1809016924]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/J - Target Ring/StaticBody2D" unique_id=1976777308]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/J - Target Ring/Area2D" unique_id=1773241793]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/J - Target Ring" unique_id=1508273074]
 stream = ExtResource("14_cpsxm")
@@ -171,15 +414,14 @@ texture = ExtResource("15_hmewc")
 texture = ExtResource("7_2vekm")
 
 [node name="K - Target Ring" type="Sprite2D" parent="Buttons" unique_id=950150305]
-position = Vector2(196, 0)
+position = Vector2(200, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("14_wuoie")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/K - Target Ring" unique_id=1803510611]
+[node name="Area2D" type="Area2D" parent="Buttons/K - Target Ring" unique_id=1946748746]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/K - Target Ring/StaticBody2D" unique_id=653606196]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/K - Target Ring/Area2D" unique_id=1719866218]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/K - Target Ring" unique_id=196342119]
 stream = ExtResource("16_7ged1")
@@ -192,15 +434,14 @@ texture = ExtResource("17_0mevm")
 texture = ExtResource("7_2vekm")
 
 [node name="L - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1837060334]
-position = Vector2(220, 0)
+position = Vector2(222, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("16_bvhbk")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/L - Target Ring" unique_id=1710687784]
+[node name="Area2D" type="Area2D" parent="Buttons/L - Target Ring" unique_id=718931368]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/L - Target Ring/StaticBody2D" unique_id=2096912489]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/L - Target Ring/Area2D" unique_id=1674056836]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/L - Target Ring" unique_id=1965431936]
 stream = ExtResource("22_bisgb")
@@ -217,11 +458,10 @@ position = Vector2(244, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("18_cpsxm")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Col - Target Ring" unique_id=1055470633]
+[node name="Area2D" type="Area2D" parent="Buttons/Col - Target Ring" unique_id=727753192]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Col - Target Ring/StaticBody2D" unique_id=774319792]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Col - Target Ring/Area2D" unique_id=853918919]
 shape = SubResource("RectangleShape2D_yg35m")
-disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Col - Target Ring" unique_id=1139250344]
 stream = ExtResource("18_w2501")
@@ -232,3 +472,31 @@ texture = ExtResource("20_bisgb")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/Col - Target Ring" unique_id=1630445173]
 texture = ExtResource("7_2vekm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1519633153]
+z_index = -1
+position = Vector2(128, 120)
+sprite_frames = SubResource("SpriteFrames_oinav")
+frame_progress = 0.92959666
+script = ExtResource("35_202ut")
+
+[connection signal="body_entered" from="Buttons/A - Target Ring/Area2D" to="Buttons/A - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/A - Target Ring/Area2D" to="Buttons/A - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/S - Target Ring/Area2D" to="Buttons/S - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/S - Target Ring/Area2D" to="Buttons/S - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/D - Target Ring/Area2D" to="Buttons/D - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/D - Target Ring/Area2D" to="Buttons/D - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/N - Target Ring/Area2D" to="Buttons/N - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/N - Target Ring/Area2D" to="Buttons/N - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/J - Target Ring/Area2D" to="Buttons/J - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/J - Target Ring/Area2D" to="Buttons/J - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/K - Target Ring/Area2D" to="Buttons/K - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/K - Target Ring/Area2D" to="Buttons/K - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/L - Target Ring/Area2D" to="Buttons/L - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/L - Target Ring/Area2D" to="Buttons/L - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Buttons/Col - Target Ring/Area2D" to="Buttons/Col - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/Col - Target Ring/Area2D" to="Buttons/Col - Target Ring" method="_on_area_2d_body_exited"]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1awy60fx76fu" path="res://prefabs/blood_drop.gd" id="1_odwrp"]
 [ext_resource type="Texture2D" uid="uid://c7eyg6hlwcx7n" path="res://Assets/Sprites/blood drop.png" id="1_ohml0"]
+[ext_resource type="Texture2D" uid="uid://c1ad15uyux2ib" path="res://Assets/Sprites/blood impact.png" id="3_wt704"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_odwrp"]
 radius = 6.0
@@ -13,6 +14,14 @@ region = Rect2(0, 0, 12, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yhmtn"]
 atlas = ExtResource("1_ohml0")
+region = Rect2(12, 0, 12, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uywqs"]
+atlas = ExtResource("3_wt704")
+region = Rect2(0, 0, 12, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hga45"]
+atlas = ExtResource("3_wt704")
 region = Rect2(12, 0, 12, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wt704"]
@@ -27,6 +36,17 @@ animations = [{
 "loop": 1,
 "name": &"default",
 "speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uywqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hga45")
+}],
+"loop": 1,
+"name": &"impact",
+"speed": 5.0
 }]
 
 [node name="Blood Drop" type="Node2D" unique_id=381305153]
@@ -34,11 +54,12 @@ script = ExtResource("1_odwrp")
 
 [node name="BloodDrop" type="RigidBody2D" parent="." unique_id=1743695993]
 position = Vector2(0, 275)
-gravity_scale = -0.57
+gravity_scale = 0.0
+linear_velocity = Vector2(0, -150)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BloodDrop" unique_id=713581182]
 shape = SubResource("CapsuleShape2D_odwrp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BloodDrop" unique_id=1956597155]
 sprite_frames = SubResource("SpriteFrames_wt704")
-frame_progress = 0.26842007
+animation = &"impact"

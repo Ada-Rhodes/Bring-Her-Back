@@ -3,18 +3,36 @@ extends Node2D
 
 # Pre-Load Blood Drop Instance
 const BLOOD_DROP = preload("res://prefabs/blood_drop.tscn")
+var col: int=9
+var row: int=8
+var track: Array[Array]
+var metrinome
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	spawn_blood()
+	#spawn_blood()
+	load_track()
+	#start timer
+	metrinome = Time.get_ticks_msec()
 	#pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#spawn_blood()
-	pass
+	# if there are still beats left in the track then
+	if track.size()>0:
+		# if one beat has passed 
+		if Time.get_ticks_msec()-metrinome>250:
+			#print the beat
+			print(track[0])
+			#I need a function to interpet the track beat and release the right drops.
+			play_beat()
+			#remove the beat 
+			track.remove_at(0)
+			#update the metrinome time 
+			metrinome = Time.get_ticks_msec()
+
 
 # Spawn Blood drop in desired position 
 func spawn_blood() -> void:
@@ -26,3 +44,101 @@ func spawn_blood() -> void:
 	
 	# Add blood drop to paret scene as a child 
 	add_child(blood_instance)
+
+
+func play_beat() -> void:
+	# load in the current beat
+	var beat=track[0]
+	# if heart beat, then
+	if beat[0]==1:
+		# find child node and release blood drop 
+		$"Buttons/Space - Target Ring".spawn_blood()
+	if beat[1]==1:
+		# find key a child node and release blood drop
+		$"Buttons/A - Target Ring".spawn_blood()
+	if beat[2]==1:
+		# find key a child node and release blood drop
+		$"Buttons/S - Target Ring".spawn_blood()
+	if beat[3]==1:
+		# find key a child node and release blood drop
+		$"Buttons/D - Target Ring".spawn_blood()
+	if beat[4]==1:
+		# find key a child node and release blood drop
+		$"Buttons/F - Target Ring".spawn_blood()
+	if beat[5]==1:
+		# find key a child node and release blood drop
+		$"Buttons/J - Target Ring".spawn_blood()
+	if beat[6]==1:
+		# find key a child node and release blood drop
+		$"Buttons/K - Target Ring".spawn_blood()
+	if beat[7]==1:
+		# find key a child node and release blood drop
+		$"Buttons/L - Target Ring".spawn_blood()
+	if beat[8]==1:
+		# find key a child node and release blood drop
+		$"Buttons/Col - Target Ring".spawn_blood()
+
+
+func load_track() -> void:
+	#Create my shit
+	track=[
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		
+		
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		
+		
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,1,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,1,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,1,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,1,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,1,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,1,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,1,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,1,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,1,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		
+		[1,0,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,1,0,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,1,0,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+		[0,0,0,1,0,0,0,0,0],
+		[0,0,0,0,0,0,0,0,0],
+	]

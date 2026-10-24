@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnbtqxhnor7u5"
-path="res://.godot/imported/blood drop outline.png-f6aad67713d8553cdd1c4b7187ef5d3f.ctex"
+uid="uid://c1ad15uyux2ib"
+path="res://.godot/imported/blood impact.png-918a641fb45e3d585c6f13e62984333a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/blood drop outline.png"
-dest_files=["res://.godot/imported/blood drop outline.png-f6aad67713d8553cdd1c4b7187ef5d3f.ctex"]
+source_file="res://Assets/Sprites/blood impact.png"
+dest_files=["res://.godot/imported/blood impact.png-918a641fb45e3d585c6f13e62984333a.ctex"]
 
 [params]
 
