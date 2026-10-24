@@ -5,13 +5,34 @@
 [ext_resource type="Texture2D" uid="uid://dm7qg3epyofso" path="res://Assets/Keys/Target - Ring.png" id="3_3mrqo"]
 [ext_resource type="Script" uid="uid://csg66xiqoewvd" path="res://key_a.gd" id="4_gwjdr"]
 [ext_resource type="AudioStream" uid="uid://djaqfkg6y658v" path="res://Assets/Sounds/Heart Beat.wav" id="5_3mrqo"]
+[ext_resource type="AudioStream" uid="uid://d282uxcdr1no" path="res://Assets/Sounds/Kick 1.wav" id="5_gebyw"]
 [ext_resource type="Texture2D" uid="uid://csoadue0xeeex" path="res://Assets/Keys/Rune - A.png" id="6_joorw"]
 [ext_resource type="Texture2D" uid="uid://cvpw5i6xegrbx" path="res://Assets/Keys/Target - Drop.png" id="7_2vekm"]
+[ext_resource type="Script" uid="uid://cutnj5denvq3r" path="res://key_s.gd" id="7_lvtmh"]
+[ext_resource type="AudioStream" uid="uid://05vf62jg7bt7" path="res://Assets/Sounds/Kick 2.wav" id="8_4my3f"]
 [ext_resource type="Texture2D" uid="uid://w0vk1h2j2ppx" path="res://Assets/Keys/Rune - S.png" id="8_gwjdr"]
 [ext_resource type="Texture2D" uid="uid://b7ov3pltb1e7p" path="res://Assets/Keys/Rune - D.png" id="9_lvtmh"]
+[ext_resource type="Script" uid="uid://5jt5mlwmlgap" path="res://key_d.gd" id="9_yyih5"]
+[ext_resource type="AudioStream" uid="uid://roiwin55j4tf" path="res://Assets/Sounds/Snare 2.wav" id="10_aeq37"]
+[ext_resource type="AudioStream" uid="uid://ba3rtv4j7cxvn" path="res://Assets/Sounds/Bass-A.wav" id="10_lvtmh"]
 [ext_resource type="Texture2D" uid="uid://di4h8te3pnkna" path="res://Assets/Keys/Rune - F.png" id="10_yyih5"]
-[ext_resource type="Script" uid="uid://wtt2gj35qp8j" path="res://key_space.gd" id="11_qjyg3"]
+[ext_resource type="Script" uid="uid://b2kdj7d361sjv" path="res://key_f.gd" id="11_qjyg3"]
 [ext_resource type="Texture2D" uid="uid://dx61bmnsl27tn" path="res://Assets/Keys/Rune - Sp.png" id="12_elkpi"]
+[ext_resource type="Script" uid="uid://c8gaa6v7xrruh" path="res://key_j.gd" id="13_bvhbk"]
+[ext_resource type="Script" uid="uid://wtt2gj35qp8j" path="res://key_space.gd" id="13_hmewc"]
+[ext_resource type="AudioStream" uid="uid://m8qwakcil64g" path="res://Assets/Sounds/Bass-Bb.wav" id="14_cpsxm"]
+[ext_resource type="Script" uid="uid://d3bdhfhhbtpg2" path="res://key_k.gd" id="14_wuoie"]
+[ext_resource type="Texture2D" uid="uid://bvxnhstsildr5" path="res://Assets/Keys/Rune - J.png" id="15_hmewc"]
+[ext_resource type="AudioStream" uid="uid://d0m6e40sjkxi6" path="res://Assets/Sounds/Bass-D.wav" id="16_7ged1"]
+[ext_resource type="Texture2D" uid="uid://gf70rafpxyxg" path="res://Assets/Sprites/Heart Filled.png" id="16_8ktx7"]
+[ext_resource type="Script" uid="uid://ck4aixxoopkad" path="res://key_l.gd" id="16_bvhbk"]
+[ext_resource type="Texture2D" uid="uid://dk5n6q2ljgspt" path="res://Assets/Keys/Rune - K.png" id="17_0mevm"]
+[ext_resource type="Texture2D" uid="uid://dg3hv1iih3tj5" path="res://Assets/Sprites/Heart-Outline.png" id="17_aeq37"]
+[ext_resource type="Script" uid="uid://lqquiern8nm8" path="res://key_colon.gd" id="18_cpsxm"]
+[ext_resource type="AudioStream" uid="uid://d31gmbd6t7m2v" path="res://Assets/Sounds/Bass-G.wav" id="18_w2501"]
+[ext_resource type="Texture2D" uid="uid://der5n4etppvjx" path="res://Assets/Keys/Rune - L.png" id="19_jsoai"]
+[ext_resource type="Texture2D" uid="uid://dx22b2afc6scr" path="res://Assets/Keys/Rule - Col.png" id="20_bisgb"]
+[ext_resource type="AudioStream" uid="uid://das6xwt51jjm6" path="res://Assets/Sounds/Bass-E.wav" id="22_bisgb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg35m"]
 size = Vector2(16, 16)
@@ -24,7 +45,7 @@ position = Vector2(0, 24)
 script = ExtResource("2_yhmtn")
 
 [node name="A - Target Ring" type="Sprite2D" parent="Buttons" unique_id=16194927]
-position = Vector2(8, 0)
+position = Vector2(12, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("4_gwjdr")
 
@@ -35,7 +56,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/A - Target Ring" unique_id=1697709971]
-stream = ExtResource("5_3mrqo")
+stream = ExtResource("5_gebyw")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/A - Target Ring" unique_id=1511278136]
 position = Vector2(0, -16)
@@ -45,9 +66,9 @@ texture = ExtResource("6_joorw")
 texture = ExtResource("7_2vekm")
 
 [node name="S - Target Ring" type="Sprite2D" parent="Buttons" unique_id=875887354]
-position = Vector2(24, 0)
+position = Vector2(36, 0)
 texture = ExtResource("3_3mrqo")
-script = ExtResource("4_gwjdr")
+script = ExtResource("7_lvtmh")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/S - Target Ring" unique_id=1211242867]
 
@@ -56,7 +77,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/S - Target Ring" unique_id=871263690]
-stream = ExtResource("5_3mrqo")
+stream = ExtResource("8_4my3f")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/S - Target Ring" unique_id=1635944081]
 position = Vector2(0, -16)
@@ -66,9 +87,9 @@ texture = ExtResource("8_gwjdr")
 texture = ExtResource("7_2vekm")
 
 [node name="D - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1310602918]
-position = Vector2(40, 0)
+position = Vector2(60, 0)
 texture = ExtResource("3_3mrqo")
-script = ExtResource("4_gwjdr")
+script = ExtResource("9_yyih5")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/D - Target Ring" unique_id=1608827842]
 
@@ -77,7 +98,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/D - Target Ring" unique_id=35226729]
-stream = ExtResource("5_3mrqo")
+stream = ExtResource("10_aeq37")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/D - Target Ring" unique_id=714154662]
 position = Vector2(0, -16)
@@ -87,9 +108,9 @@ texture = ExtResource("9_lvtmh")
 texture = ExtResource("7_2vekm")
 
 [node name="F - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1081905276]
-position = Vector2(56, 0)
+position = Vector2(84, 0)
 texture = ExtResource("3_3mrqo")
-script = ExtResource("4_gwjdr")
+script = ExtResource("11_qjyg3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/F - Target Ring" unique_id=1407537157]
 
@@ -98,7 +119,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/F - Target Ring" unique_id=2072485214]
-stream = ExtResource("5_3mrqo")
+stream = ExtResource("10_lvtmh")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/F - Target Ring" unique_id=1389303080]
 position = Vector2(0, -16)
@@ -109,8 +130,8 @@ texture = ExtResource("7_2vekm")
 
 [node name="Space - Target Ring" type="Sprite2D" parent="Buttons" unique_id=553866563]
 position = Vector2(128, 0)
-texture = ExtResource("3_3mrqo")
-script = ExtResource("11_qjyg3")
+texture = ExtResource("17_aeq37")
+script = ExtResource("13_hmewc")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Space - Target Ring" unique_id=258302125]
 
@@ -126,4 +147,88 @@ position = Vector2(0, -16)
 texture = ExtResource("12_elkpi")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/Space - Target Ring" unique_id=1077802321]
+texture = ExtResource("16_8ktx7")
+
+[node name="J - Target Ring" type="Sprite2D" parent="Buttons" unique_id=2055406348]
+position = Vector2(172, 0)
+texture = ExtResource("3_3mrqo")
+script = ExtResource("13_bvhbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/J - Target Ring" unique_id=1627797977]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/J - Target Ring/StaticBody2D" unique_id=1976777308]
+shape = SubResource("RectangleShape2D_yg35m")
+disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/J - Target Ring" unique_id=1508273074]
+stream = ExtResource("14_cpsxm")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/J - Target Ring" unique_id=257890322]
+position = Vector2(0, -16)
+texture = ExtResource("15_hmewc")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/J - Target Ring" unique_id=1985128361]
+texture = ExtResource("7_2vekm")
+
+[node name="K - Target Ring" type="Sprite2D" parent="Buttons" unique_id=950150305]
+position = Vector2(196, 0)
+texture = ExtResource("3_3mrqo")
+script = ExtResource("14_wuoie")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/K - Target Ring" unique_id=1803510611]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/K - Target Ring/StaticBody2D" unique_id=653606196]
+shape = SubResource("RectangleShape2D_yg35m")
+disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/K - Target Ring" unique_id=196342119]
+stream = ExtResource("16_7ged1")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/K - Target Ring" unique_id=1932614245]
+position = Vector2(0, -16)
+texture = ExtResource("17_0mevm")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/K - Target Ring" unique_id=633536567]
+texture = ExtResource("7_2vekm")
+
+[node name="L - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1837060334]
+position = Vector2(220, 0)
+texture = ExtResource("3_3mrqo")
+script = ExtResource("16_bvhbk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/L - Target Ring" unique_id=1710687784]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/L - Target Ring/StaticBody2D" unique_id=2096912489]
+shape = SubResource("RectangleShape2D_yg35m")
+disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/L - Target Ring" unique_id=1965431936]
+stream = ExtResource("22_bisgb")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/L - Target Ring" unique_id=684135385]
+position = Vector2(0, -16)
+texture = ExtResource("19_jsoai")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/L - Target Ring" unique_id=1905789644]
+texture = ExtResource("7_2vekm")
+
+[node name="Col - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1171125882]
+position = Vector2(244, 0)
+texture = ExtResource("3_3mrqo")
+script = ExtResource("18_cpsxm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Buttons/Col - Target Ring" unique_id=1055470633]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Col - Target Ring/StaticBody2D" unique_id=774319792]
+shape = SubResource("RectangleShape2D_yg35m")
+disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Col - Target Ring" unique_id=1139250344]
+stream = ExtResource("18_w2501")
+
+[node name="Rune Label" type="Sprite2D" parent="Buttons/Col - Target Ring" unique_id=2059164997]
+position = Vector2(0, -16)
+texture = ExtResource("20_bisgb")
+
+[node name="Target Drop" type="Sprite2D" parent="Buttons/Col - Target Ring" unique_id=1630445173]
 texture = ExtResource("7_2vekm")

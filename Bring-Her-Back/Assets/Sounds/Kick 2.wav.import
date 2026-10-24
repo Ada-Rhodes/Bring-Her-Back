@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://c2jh22wq5hpl"
-path="res://.godot/imported/Wump.wav-fd0689005d5867b7c908d2feb86e7ed8.sample"
+uid="uid://05vf62jg7bt7"
+path="res://.godot/imported/Kick 2.wav-e20dd8fbc6f7d309dadb0c5d0039713f.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/Wump.wav"
-dest_files=["res://.godot/imported/Wump.wav-fd0689005d5867b7c908d2feb86e7ed8.sample"]
+source_file="res://Assets/Sounds/Kick 2.wav"
+dest_files=["res://.godot/imported/Kick 2.wav-e20dd8fbc6f7d309dadb0c5d0039713f.sample"]
 
 [params]
 

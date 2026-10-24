@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://roiwin55j4tf"
+path="res://.godot/imported/Snare 2.wav-bedfcf51b59044035dd96b5e9491c934.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Snare 2.wav"
+dest_files=["res://.godot/imported/Snare 2.wav-bedfcf51b59044035dd96b5e9491c934.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
