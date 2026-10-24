@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgywnhrfbgk0w"
-path="res://.godot/imported/L-key.png-81b672de82095ac4cd907a54c169fab7.ctex"
+uid="uid://cvpw5i6xegrbx"
+path="res://.godot/imported/Target - Drop.png-bc2e6bba9866859b43a891865d071848.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Keys/L-key.png"
-dest_files=["res://.godot/imported/L-key.png-81b672de82095ac4cd907a54c169fab7.ctex"]
+source_file="res://Assets/Keys/Target - Drop.png"
+dest_files=["res://.godot/imported/Target - Drop.png-bc2e6bba9866859b43a891865d071848.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crqk7sh3282fi"
-path="res://.godot/imported/f-key.png-55e943df4e780a3d89fc4e886feffb64.ctex"
+uid="uid://dm7qg3epyofso"
+path="res://.godot/imported/Target - Ring.png-6031c2c9d2a83114c5c78fe3003b8551.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Keys/f-key.png"
-dest_files=["res://.godot/imported/f-key.png-55e943df4e780a3d89fc4e886feffb64.ctex"]
+source_file="res://Assets/Keys/Target - Ring.png"
+dest_files=["res://.godot/imported/Target - Ring.png-6031c2c9d2a83114c5c78fe3003b8551.ctex"]
 
 [params]
 

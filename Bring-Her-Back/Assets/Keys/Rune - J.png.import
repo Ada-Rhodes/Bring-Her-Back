@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmn7n2c5ygh26"
-path="res://.godot/imported/s-key.png-c8a044a30650b4efd5321782a3a7ea7b.ctex"
+uid="uid://bvxnhstsildr5"
+path="res://.godot/imported/Rune - J.png-ad05520b077633a5bf006a300ba8798f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Keys/s-key.png"
-dest_files=["res://.godot/imported/s-key.png-c8a044a30650b4efd5321782a3a7ea7b.ctex"]
+source_file="res://Assets/Keys/Rune - J.png"
+dest_files=["res://.godot/imported/Rune - J.png-ad05520b077633a5bf006a300ba8798f.ctex"]
 
 [params]
 

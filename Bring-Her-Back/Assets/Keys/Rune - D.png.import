@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jvjmv3hh50th"
-path="res://.godot/imported/colon-key.png-8c3f7648784f54fa8e147c39d8c6f118.ctex"
+uid="uid://b7ov3pltb1e7p"
+path="res://.godot/imported/Rune - D.png-f48f85e6d1e41630ed259e0599572da2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Keys/colon-key.png"
-dest_files=["res://.godot/imported/colon-key.png-8c3f7648784f54fa8e147c39d8c6f118.ctex"]
+source_file="res://Assets/Keys/Rune - D.png"
+dest_files=["res://.godot/imported/Rune - D.png-f48f85e6d1e41630ed259e0599572da2.ctex"]
 
 [params]
 

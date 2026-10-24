@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nvb2n6gyrmg6"
-path="res://.godot/imported/k-key.png-9baadeceb71c7b385fd0e420814c539c.ctex"
+uid="uid://dx22b2afc6scr"
+path="res://.godot/imported/Rule - Col.png-19057810f42b50cf50ebac251d70bdac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Keys/k-key.png"
-dest_files=["res://.godot/imported/k-key.png-9baadeceb71c7b385fd0e420814c539c.ctex"]
+source_file="res://Assets/Keys/Rule - Col.png"
+dest_files=["res://.godot/imported/Rule - Col.png-19057810f42b50cf50ebac251d70bdac.ctex"]
 
 [params]
 
