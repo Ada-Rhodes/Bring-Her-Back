@@ -365,6 +365,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Space - Target Ring" unique_id=1626331230]
 stream = ExtResource("5_3mrqo")
+volume_db = 12.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/Space - Target Ring" unique_id=1007269892]
 position = Vector2(0, -16)
@@ -385,6 +386,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/N - Target Ring" unique_id=168027174]
 stream = ExtResource("10_lvtmh")
+volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/N - Target Ring" unique_id=1408551879]
 position = Vector2(0, -16)
@@ -405,6 +407,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/J - Target Ring" unique_id=1508273074]
 stream = ExtResource("14_cpsxm")
+volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/J - Target Ring" unique_id=257890322]
 position = Vector2(0, -16)
@@ -425,6 +428,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/K - Target Ring" unique_id=196342119]
 stream = ExtResource("16_7ged1")
+volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/K - Target Ring" unique_id=1932614245]
 position = Vector2(0, -16)
@@ -445,6 +449,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/L - Target Ring" unique_id=1965431936]
 stream = ExtResource("22_bisgb")
+volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/L - Target Ring" unique_id=684135385]
 position = Vector2(0, -16)
@@ -465,6 +470,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/Col - Target Ring" unique_id=1139250344]
 stream = ExtResource("18_w2501")
+volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/Col - Target Ring" unique_id=2059164997]
 position = Vector2(0, -16)
