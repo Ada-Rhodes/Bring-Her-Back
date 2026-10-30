@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://dm7qg3epyofso" path="res://Assets/Keys/Target - Ring.png" id="3_3mrqo"]
 [ext_resource type="Script" uid="uid://csg66xiqoewvd" path="res://key_a.gd" id="4_gwjdr"]
 [ext_resource type="AudioStream" uid="uid://djaqfkg6y658v" path="res://Assets/Sounds/Heart Beat.wav" id="5_3mrqo"]
-[ext_resource type="AudioStream" uid="uid://d282uxcdr1no" path="res://Assets/Sounds/Kick 1.wav" id="5_gebyw"]
 [ext_resource type="Texture2D" uid="uid://csoadue0xeeex" path="res://Assets/Keys/Rune - A.png" id="6_joorw"]
 [ext_resource type="Texture2D" uid="uid://cvpw5i6xegrbx" path="res://Assets/Keys/Target - Drop.png" id="7_2vekm"]
 [ext_resource type="Script" uid="uid://cutnj5denvq3r" path="res://key_s.gd" id="7_lvtmh"]
@@ -28,6 +27,7 @@
 [ext_resource type="Script" uid="uid://ck4aixxoopkad" path="res://key_l.gd" id="16_bvhbk"]
 [ext_resource type="Texture2D" uid="uid://dk5n6q2ljgspt" path="res://Assets/Keys/Rune - K.png" id="17_0mevm"]
 [ext_resource type="Texture2D" uid="uid://dg3hv1iih3tj5" path="res://Assets/Sprites/Heart-Outline.png" id="17_aeq37"]
+[ext_resource type="Script" uid="uid://1aeucpucuhyl" path="res://key_v.gd" id="17_wdm1y"]
 [ext_resource type="Script" uid="uid://lqquiern8nm8" path="res://key_colon.gd" id="18_cpsxm"]
 [ext_resource type="AudioStream" uid="uid://d31gmbd6t7m2v" path="res://Assets/Sounds/Bass-G.wav" id="18_w2501"]
 [ext_resource type="Texture2D" uid="uid://der5n4etppvjx" path="res://Assets/Keys/Rune - L.png" id="19_jsoai"]
@@ -263,7 +263,7 @@ script = ExtResource("4_gwjdr")
 shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/A - Target Ring" unique_id=1697709971]
-stream = ExtResource("5_gebyw")
+stream = ExtResource("10_aeq37")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/A - Target Ring" unique_id=1511278136]
 position = Vector2(0, -16)
@@ -313,8 +313,7 @@ texture = ExtResource("9_lvtmh")
 texture = ExtResource("7_2vekm")
 
 [node name="F - Target Ring" type="Sprite2D" parent="Buttons" unique_id=1081905276]
-visible = false
-position = Vector2(84, 0)
+position = Vector2(78, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("11_qjyg3")
 
@@ -333,24 +332,25 @@ texture = ExtResource("10_yyih5")
 [node name="Target Drop" type="Sprite2D" parent="Buttons/F - Target Ring" unique_id=1063174083]
 texture = ExtResource("7_2vekm")
 
-[node name="v - Target Ring" type="Sprite2D" parent="Buttons" unique_id=756003796]
+[node name="V - Target Ring" type="Sprite2D" parent="Buttons" unique_id=756003796]
 visible = false
 position = Vector2(108, 0)
 texture = ExtResource("3_3mrqo")
+script = ExtResource("17_wdm1y")
 
-[node name="Area2D" type="Area2D" parent="Buttons/v - Target Ring" unique_id=1854235230]
+[node name="Area2D" type="Area2D" parent="Buttons/V - Target Ring" unique_id=1854235230]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/v - Target Ring/Area2D" unique_id=503614723]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/V - Target Ring/Area2D" unique_id=503614723]
 shape = SubResource("RectangleShape2D_yg35m")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/v - Target Ring" unique_id=1824065839]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/V - Target Ring" unique_id=1824065839]
 stream = ExtResource("10_lvtmh")
 
-[node name="Rune Label" type="Sprite2D" parent="Buttons/v - Target Ring" unique_id=1820780306]
+[node name="Rune Label" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=1820780306]
 position = Vector2(0, -16)
 texture = ExtResource("10_yyih5")
 
-[node name="Target Drop" type="Sprite2D" parent="Buttons/v - Target Ring" unique_id=598474471]
+[node name="Target Drop" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=598474471]
 texture = ExtResource("7_2vekm")
 
 [node name="Space - Target Ring" type="Sprite2D" parent="Buttons" unique_id=553866563]
@@ -486,23 +486,34 @@ sprite_frames = SubResource("SpriteFrames_oinav")
 frame_progress = 0.92959666
 script = ExtResource("35_202ut")
 
+[connection signal="missed_beat" from="Buttons/A - Target Ring" to="." method="_on_a__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/A - Target Ring/Area2D" to="Buttons/A - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/A - Target Ring/Area2D" to="Buttons/A - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/S - Target Ring" to="." method="_on_s__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/S - Target Ring/Area2D" to="Buttons/S - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/S - Target Ring/Area2D" to="Buttons/S - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/D - Target Ring" to="." method="_on_d__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/D - Target Ring/Area2D" to="Buttons/D - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/D - Target Ring/Area2D" to="Buttons/D - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/F - Target Ring" to="." method="_on_f__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/V - Target Ring" to="." method="_on_v__target_ring_missed_beat"]
+[connection signal="missed_beat" from="Buttons/Space - Target Ring" to="." method="_on_space__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/N - Target Ring" to="." method="_on_n__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/N - Target Ring/Area2D" to="Buttons/N - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/N - Target Ring/Area2D" to="Buttons/N - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/J - Target Ring" to="." method="_on_j__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/J - Target Ring/Area2D" to="Buttons/J - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/J - Target Ring/Area2D" to="Buttons/J - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/K - Target Ring" to="." method="_on_k__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/K - Target Ring/Area2D" to="Buttons/K - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/K - Target Ring/Area2D" to="Buttons/K - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/L - Target Ring" to="." method="_on_l__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/L - Target Ring/Area2D" to="Buttons/L - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/L - Target Ring/Area2D" to="Buttons/L - Target Ring" method="_on_area_2d_body_exited"]
+[connection signal="missed_beat" from="Buttons/Col - Target Ring" to="." method="_on_col__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/Col - Target Ring/Area2D" to="Buttons/Col - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/Col - Target Ring/Area2D" to="Buttons/Col - Target Ring" method="_on_area_2d_body_exited"]

@@ -3,6 +3,7 @@ extends Sprite2D
 
 # Pre-Load Blood Drop Instance
 const BLOOD_DROP = preload("res://prefabs/blood_drop.tscn")
+signal missed_beat
 
 
 # Called when the node enters the scene tree for the first time.

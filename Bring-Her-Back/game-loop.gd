@@ -7,10 +7,25 @@ var col: int=9
 var row: int=8
 var track: Array[Array]
 var metrinome
+@export var life_counter: int
+@onready var key_sp: Sprite2D = $"Buttons/Space - Target Ring"
+@onready var key_a: Sprite2D = $"Buttons/A - Target Ring"
+@onready var key_s: Sprite2D = $"Buttons/S - Target Ring"
+@onready var key_d: Sprite2D = $"Buttons/D - Target Ring"
+@onready var key_f: Sprite2D = $"Buttons/F - Target Ring"
+@onready var key_v: Sprite2D = $"Buttons/V - Target Ring"
+@onready var key_n: Sprite2D = $"Buttons/N - Target Ring"
+@onready var key_j: Sprite2D = $"Buttons/J - Target Ring"
+@onready var key_k: Sprite2D = $"Buttons/K - Target Ring"
+@onready var key_l: Sprite2D = $"Buttons/L - Target Ring"
+@onready var key_col: Sprite2D = $"Buttons/Col - Target Ring"
+	#CharacterBody2D = $"../Character"
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Set starting life
+	life_counter = 25
 	#spawn_blood()
 	load_track()
 	#start timer
@@ -32,15 +47,14 @@ func _process(delta: float) -> void:
 			track.remove_at(0)
 			#update the metrinome time 
 			metrinome = Time.get_ticks_msec()
+	if life_counter<=0:
+		get_tree().change_scene_to_file("res://GameOver.tscn")
 
 
 # Spawn Blood drop in desired position 
 func spawn_blood() -> void:
 	# Create an instance of the blood drop 
 	var blood_instance = BLOOD_DROP.instantiate()
-	
-	# Set blood drop position 1-8 
-	# Do this later
 	
 	# Add blood drop to paret scene as a child 
 	add_child(blood_instance)
@@ -95,14 +109,106 @@ func load_track() -> void:
 		[0,0,0,0,0,0,0,0,0,0,0],
 		
 		# count in 
-		[1,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[1,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
-		[0,0,0,0,0,0,0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		
+		# add hi hat - need to be clickier
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		1,0,0,0,0,
+		0,0,0,0,0],
+		[1,
+		0,0,0,0,0,
+		0,0,0,0,0],
+		[0,
+		0,0,0,0,0,
+		0,0,0,0,0],
 		
 		[1,0,0,0,0,0,0,0,0,0,0],
 		[0,0,0,0,0,0,0,0,0,0,0],
@@ -586,3 +692,48 @@ func load_track() -> void:
 		0,0,0,0,0],
 	]
 	print(track.size())
+
+
+func _on_space__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_a__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_s__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+	
+func _on_d__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_f__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_v__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_n__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_j__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_k__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+
+func _on_l__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
+	
+func _on_col__target_ring_missed_beat() -> void:
+	life_counter=life_counter-1
+	print(life_counter)
