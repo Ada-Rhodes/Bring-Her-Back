@@ -20,6 +20,7 @@ func _process(delta: float) -> void:
 	var aPressed = Input.is_action_just_pressed("Key Space")
 	if aPressed == true:
 		$AudioStreamPlayer.play()
+		$"Animate Heart".play("default")
 		#spawn_blood() #moved to the game loop
 		if $Area2D.area_entered:
 			print("A")
