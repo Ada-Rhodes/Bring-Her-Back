@@ -10,8 +10,9 @@ var droplet: Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#$"Target Drop".modulate.a=0.0
 	$"Target Drop".visible=false
-	caught = false
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -39,21 +40,20 @@ func spawn_blood() -> void:
 
 
 func _on_blood_instance_left_tree() -> void:
-	# on blood instance leaving the tree, emit missed_beat signal
-	if caught == false:
-		missed_beat.emit() # if missed drop, then signal
-		print("oof")
-	if caught == true: 
-		caught = false #if drop was caught then reset flag
-		print("caught")
-
+	if is_instance_valid(droplet):
+		# on blood instance leaving the tree, emit missed_beat signal
+		if droplet.on_beat(2) == false:
+			missed_beat.emit() # if missed drop, then signal
+			print("oof")
+		if droplet.on_beat(2) == true: 
+			print("caught")
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	$"Target Drop".visible=true
 	droplet = body.get_parent()
 	on_beat = true
-	caught = true # flag to account for caught drop
+	droplet.on_beat(1)
 	#blood.queue_free()
 	
 	#if blood.has_method("poof"):

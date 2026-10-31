@@ -9,7 +9,7 @@ var caught: bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	caught = 0 # set as not caught
+	caught = false # set as not caught
 	sprite.play("default")
 	# Local position (relative to its parent node)
 	local_pos = get_node("BloodDrop").position.y
@@ -30,9 +30,19 @@ func _process(delta: float) -> void:
 	# delete if off screen 
 	if local_pos < -64:
 		var elapsed_time = Time.get_ticks_msec() - start_time
-		#print("Time elapsed: ", elapsed_time, " ms")
+		#print("Debug: blood_drop: Time elapsed: ", elapsed_time, " ms")
 		
 		queue_free()
 
 func poof() -> void:
 	print("poof")
+
+func on_beat(state: int) -> bool:
+	if state == 1:
+		caught = true
+	if state ==0:
+		caught = false 
+	if state == 2:
+		#return without updating
+		print("Debug 1: blood_drop: ", caught)
+	return caught

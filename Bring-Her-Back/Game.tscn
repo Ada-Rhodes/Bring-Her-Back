@@ -39,7 +39,7 @@
 [ext_resource type="Script" uid="uid://b2s4vq7o4fnc5" path="res://her_body.gd" id="35_202ut"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg35m"]
-size = Vector2(16, 48)
+size = Vector2(16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_202ut"]
 atlas = ExtResource("34_suycs")
