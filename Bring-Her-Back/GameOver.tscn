@@ -10,6 +10,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="Button_Manager" unique_id=207673293]
 layout_mode = 0
@@ -18,13 +19,6 @@ offset_top = 16.0
 offset_right = 72.0
 offset_bottom = 48.0
 text = "\"I have to try again\""
-
-[node name="Quit" type="Button" parent="Button_Manager" unique_id=1114707077]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 112.0
-offset_right = 72.0
-offset_bottom = 144.0
-text = "QUIT"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]

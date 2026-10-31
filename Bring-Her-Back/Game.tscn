@@ -27,6 +27,7 @@
 [ext_resource type="Script" uid="uid://ck4aixxoopkad" path="res://key_l.gd" id="16_bvhbk"]
 [ext_resource type="Texture2D" uid="uid://dk5n6q2ljgspt" path="res://Assets/Keys/Rune - K.png" id="17_0mevm"]
 [ext_resource type="Texture2D" uid="uid://dg3hv1iih3tj5" path="res://Assets/Sprites/Heart-Outline.png" id="17_aeq37"]
+[ext_resource type="Texture2D" uid="uid://ckk587q2e0ciu" path="res://Assets/Keys/Rune - V.png" id="17_hxy8k"]
 [ext_resource type="Script" uid="uid://1aeucpucuhyl" path="res://key_v.gd" id="17_wdm1y"]
 [ext_resource type="Script" uid="uid://lqquiern8nm8" path="res://key_colon.gd" id="18_cpsxm"]
 [ext_resource type="AudioStream" uid="uid://d31gmbd6t7m2v" path="res://Assets/Sounds/Bass-G.wav" id="18_w2501"]
@@ -333,8 +334,7 @@ texture = ExtResource("10_yyih5")
 texture = ExtResource("7_2vekm")
 
 [node name="V - Target Ring" type="Sprite2D" parent="Buttons" unique_id=756003796]
-visible = false
-position = Vector2(108, 0)
+position = Vector2(100, 0)
 texture = ExtResource("3_3mrqo")
 script = ExtResource("17_wdm1y")
 
@@ -348,7 +348,7 @@ stream = ExtResource("10_lvtmh")
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=1820780306]
 position = Vector2(0, -16)
-texture = ExtResource("10_yyih5")
+texture = ExtResource("17_hxy8k")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=598474471]
 texture = ExtResource("7_2vekm")

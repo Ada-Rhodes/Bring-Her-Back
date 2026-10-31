@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cdrjrduyyqhk3"]
+
+[ext_resource type="Script" uid="uid://dsq6dv7uckcbb" path="res://win_screen.gd" id="1_a03an"]
+
+[node name="Node2D" type="Node2D" unique_id=475129084]
+script = ExtResource("1_a03an")
+
+[node name="Button_Manager" type="Control" parent="." unique_id=1979647304]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="Button" parent="Button_Manager" unique_id=779260371]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 72.0
+offset_bottom = 48.0
+text = "You brought her back!
+But something isn't right
+
+Dispose of the body and 
+try again."
+alignment = 0
+metadata/_edit_use_anchors_ = true
