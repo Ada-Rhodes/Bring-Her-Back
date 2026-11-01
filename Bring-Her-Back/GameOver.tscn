@@ -1,6 +1,183 @@
 [gd_scene format=3 uid="uid://di3nju7f5fdn6"]
 
 [ext_resource type="Script" uid="uid://c48ghkbik7r8g" path="res://game_over.gd" id="1_40baj"]
+[ext_resource type="Texture2D" uid="uid://bswg8aui0s5bl" path="res://Assets/Sprites/disolve.png" id="2_a1htc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eksk4"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl4ts"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jywu3"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3y56u"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua7od"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fonj"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_758bs"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rr04i"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_067b4"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4h2f"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5mvm"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gre5i"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_820s7"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db7fu"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrsxc"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h41wa"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksgax"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6fyr"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pigga"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbhm6"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmh4c"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(0, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rno63"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(256, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eud3d"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(512, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0ulr"]
+atlas = ExtResource("2_a1htc")
+region = Rect2(768, 1200, 256, 240)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yg35m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eksk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl4ts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jywu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3y56u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua7od")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fonj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_758bs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rr04i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_067b4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4h2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5mvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gre5i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_820s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_db7fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrsxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h41wa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksgax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6fyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pigga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbhm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmh4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rno63")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eud3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0ulr")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=1573232621]
 script = ExtResource("1_40baj")
@@ -13,12 +190,34 @@ offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="Button_Manager" unique_id=207673293]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.75
+anchor_top = 3.55
+anchor_right = 4.175
+anchor_bottom = 3.55
 offset_left = 8.0
-offset_top = 16.0
+offset_top = -2.0
 offset_right = 72.0
-offset_bottom = 48.0
+offset_bottom = 30.0
 text = "\"I have to try again\""
 metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=222389235]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 157.0
+theme_override_font_sizes/normal_font_size = 12
+text = "Her pulsating form begins to tear inself apart as it falls to the floor and slowly disolves into a dark red foam thats stinks of rust and rotting meat.
+
+You were so close, perhaps if you had even more blood to sacrifice it will work..."
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1663676256]
+z_index = -1
+position = Vector2(128, 120)
+sprite_frames = SubResource("SpriteFrames_yg35m")
+frame = 23
+frame_progress = 1.0
 
 [connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]

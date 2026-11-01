@@ -177,6 +177,38 @@ region = Rect2(512, 0, 256, 240)
 atlas = ExtResource("38_8576b")
 region = Rect2(768, 0, 256, 240)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxpco"]
+atlas = ExtResource("38_8576b")
+region = Rect2(0, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wwk6"]
+atlas = ExtResource("38_8576b")
+region = Rect2(0, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3pr3"]
+atlas = ExtResource("38_8576b")
+region = Rect2(256, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sm5v0"]
+atlas = ExtResource("38_8576b")
+region = Rect2(256, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqv38"]
+atlas = ExtResource("38_8576b")
+region = Rect2(512, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ne6mv"]
+atlas = ExtResource("38_8576b")
+region = Rect2(512, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvbgs"]
+atlas = ExtResource("38_8576b")
+region = Rect2(768, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssxab"]
+atlas = ExtResource("38_8576b")
+region = Rect2(768, 1200, 256, 240)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_xvmq0"]
 animations = [{
 "frames": [{
@@ -297,6 +329,35 @@ animations = [{
 "loop": 0,
 "name": &"default",
 "speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxpco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wwk6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3pr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sm5v0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqv38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ne6mv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvbgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssxab")
+}],
+"loop": 1,
+"name": &"flickering",
+"speed": 5.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_202ut"]
@@ -944,6 +1005,7 @@ texture = ExtResource("7_2vekm")
 [node name="Candles" type="AnimatedSprite2D" parent="." unique_id=156712707]
 position = Vector2(128, 120)
 sprite_frames = SubResource("SpriteFrames_xvmq0")
+animation = &"flickering"
 
 [node name="Her Body" type="AnimatedSprite2D" parent="." unique_id=1519633153]
 z_index = -1

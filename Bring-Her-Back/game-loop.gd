@@ -47,6 +47,18 @@ func _process(delta: float) -> void:
 			track.remove_at(0)
 			#update the metrinome time 
 			metrinome = Time.get_ticks_msec()
+	if life_counter>=25:
+		$Candles.play("5 candles")
+	elif 25>life_counter && life_counter >=20:
+		$Candles.play("4 candles")
+	elif 20>life_counter && life_counter >=15:
+		$Candles.play("3 candles")
+	elif 15>life_counter && life_counter >=10:
+		$Candles.play("2 candles")
+	elif 10>life_counter && life_counter >=5:
+		$Candles.play("1 candles")
+	elif 5>life_counter && life_counter >0:
+		$Candles.play("flickering")
 	if life_counter<=0:
 		get_tree().change_scene_to_file("res://GameOver.tscn")
 

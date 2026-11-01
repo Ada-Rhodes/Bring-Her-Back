@@ -1,6 +1,99 @@
 [gd_scene format=3 uid="uid://7f7skbkj42hm"]
 
 [ext_resource type="Script" uid="uid://ccm28jj3y02mr" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://cjb00fwwxm83k" path="res://Assets/Sprites/here she lies.png" id="2_7vrkn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fu7sn"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 0, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jix8l"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 240, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glbon"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 480, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlkkf"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 720, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qe12f"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 960, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qtwp"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 1200, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy7ct"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 1440, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0o4t1"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 1680, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k4wn"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 1920, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5v2v"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 2160, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iotk1"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 2400, 256, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w44g7"]
+atlas = ExtResource("2_7vrkn")
+region = Rect2(0, 2640, 256, 240)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oinav"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fu7sn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jix8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glbon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlkkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qe12f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qtwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dy7ct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0o4t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k4wn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5v2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iotk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w44g7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Main Menu" type="Node2D" unique_id=732303576]
 script = ExtResource("1_06t4h")
@@ -13,28 +106,26 @@ offset_bottom = 40.0
 
 [node name="Start" type="Button" parent="Button_Manager" unique_id=222202852]
 layout_mode = 0
+offset_left = 40.0
+offset_top = 140.0
+offset_right = 248.0
+offset_bottom = 217.0
+text = "\"I can't go on without her,
+I have to bring her back\"
+[start game]"
+alignment = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=713191854]
 offset_left = 8.0
-offset_top = 16.0
-offset_right = 72.0
+offset_top = 8.0
+offset_right = 248.0
 offset_bottom = 48.0
-text = "START"
+theme_override_font_sizes/normal_font_size = 12
+text = "\"This isn't healthy, you have to let her go and move on\""
 
-[node name="Options" type="Button" parent="Button_Manager" unique_id=1201324545]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 64.0
-offset_right = 92.0
-offset_bottom = 96.0
-text = "OPTIONS"
-
-[node name="Quit" type="Button" parent="Button_Manager" unique_id=751463444]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 112.0
-offset_right = 72.0
-offset_bottom = 144.0
-text = "QUIT"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1692590616]
+z_index = -1
+position = Vector2(128, 120)
+sprite_frames = SubResource("SpriteFrames_oinav")
 
 [connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button_Manager/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button_Manager/Quit" to="." method="_on_quit_pressed"]

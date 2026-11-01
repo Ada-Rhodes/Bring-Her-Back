@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 		sprite.modulate.a = 0.5
 	# delete if off screen 
 	if local_pos < -64:
+		caught = false 
 		var elapsed_time = Time.get_ticks_msec() - start_time
 		#print("Debug: blood_drop: Time elapsed: ", elapsed_time, " ms")
 		

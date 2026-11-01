@@ -15,13 +15,21 @@ metadata/_edit_use_anchors_ = true
 [node name="Start" type="Button" parent="Button_Manager" unique_id=779260371]
 layout_mode = 0
 offset_left = 8.0
-offset_top = 16.0
-offset_right = 72.0
-offset_bottom = 48.0
-text = "You brought her back!
-But something isn't right
-
-Dispose of the body and 
-try again."
+offset_top = 200.0
+offset_right = 95.0
+offset_bottom = 232.0
+text = "Play again"
 alignment = 0
 metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2003602292]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 196.0
+theme_override_font_sizes/normal_font_size = 9
+text = "There is a blinding flash of light and a wave of intense heat that feels like it is burning you from the inside, and then as you lay on the floor stunned you hear her voice. 
+She doesn't remember what happens and you come up with some explaination that it was a mixup at the hospital, and she had amnesia. 
+She is exactly how you remember her, perhaps too much like you remember her. 
+Sometimes you walk into a room and catch her just standing there, like a statue. At night you can feel her watching you sleep. 
+Perhaps you brought her back, or perhaps you brought back something else..."
