@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://csoadue0xeeex" path="res://Assets/Keys/Rune - A.png" id="6_joorw"]
 [ext_resource type="Texture2D" uid="uid://cvpw5i6xegrbx" path="res://Assets/Keys/Target - Drop.png" id="7_2vekm"]
 [ext_resource type="Script" uid="uid://cutnj5denvq3r" path="res://key_s.gd" id="7_lvtmh"]
-[ext_resource type="AudioStream" uid="uid://05vf62jg7bt7" path="res://Assets/Sounds/Kick 2.wav" id="8_4my3f"]
 [ext_resource type="Texture2D" uid="uid://w0vk1h2j2ppx" path="res://Assets/Keys/Rune - S.png" id="8_gwjdr"]
 [ext_resource type="Texture2D" uid="uid://b7ov3pltb1e7p" path="res://Assets/Keys/Rune - D.png" id="9_lvtmh"]
 [ext_resource type="Script" uid="uid://5jt5mlwmlgap" path="res://key_d.gd" id="9_yyih5"]
@@ -760,7 +759,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cb5cn")
 }],
-"loop": 1,
+"loop": 2,
 "name": &"default",
 "speed": 1.0
 }]
@@ -803,7 +802,8 @@ script = ExtResource("7_lvtmh")
 shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/S - Target Ring" unique_id=871263690]
-stream = ExtResource("8_4my3f")
+stream = ExtResource("22_bisgb")
+pitch_scale = 0.5
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/S - Target Ring" unique_id=1635944081]
 position = Vector2(0, -16)
@@ -823,7 +823,8 @@ script = ExtResource("9_yyih5")
 shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/D - Target Ring" unique_id=35226729]
-stream = ExtResource("10_aeq37")
+stream = ExtResource("16_7ged1")
+pitch_scale = 0.5
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/D - Target Ring" unique_id=714154662]
 position = Vector2(0, -16)
@@ -843,7 +844,8 @@ script = ExtResource("11_qjyg3")
 shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/F - Target Ring" unique_id=2072485214]
-stream = ExtResource("10_lvtmh")
+stream = ExtResource("14_cpsxm")
+pitch_scale = 0.5
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/F - Target Ring" unique_id=1389303080]
 position = Vector2(0, -16)
@@ -864,6 +866,7 @@ shape = SubResource("RectangleShape2D_yg35m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Buttons/V - Target Ring" unique_id=1824065839]
 stream = ExtResource("10_lvtmh")
+pitch_scale = 0.5
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=1820780306]
 position = Vector2(0, -16)
