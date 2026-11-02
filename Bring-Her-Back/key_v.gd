@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 		$AudioStreamPlayer.play()
 		#spawn_blood() #moved to the game loop
 		if $Area2D.area_entered:
-			print("A")
+			print("V")
 			if droplet!=null:
 				droplet.queue_free()
 			

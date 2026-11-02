@@ -869,7 +869,7 @@ stream = ExtResource("10_lvtmh")
 pitch_scale = 0.5
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=1820780306]
-position = Vector2(0, -16)
+position = Vector2(-4, -12)
 texture = ExtResource("17_hxy8k")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/V - Target Ring" unique_id=598474471]
@@ -890,7 +890,7 @@ stream = ExtResource("5_3mrqo")
 volume_db = 12.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/Space - Target Ring" unique_id=1007269892]
-position = Vector2(0, -16)
+position = Vector2(0, -12)
 texture = ExtResource("12_elkpi")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/Space - Target Ring" unique_id=1077802321]
@@ -915,7 +915,7 @@ stream = ExtResource("10_lvtmh")
 volume_db = -6.0
 
 [node name="Rune Label" type="Sprite2D" parent="Buttons/N - Target Ring" unique_id=1408551879]
-position = Vector2(0, -16)
+position = Vector2(4, -12)
 texture = ExtResource("22_xwkxq")
 
 [node name="Target Drop" type="Sprite2D" parent="Buttons/N - Target Ring" unique_id=852387245]
@@ -1029,6 +1029,8 @@ script = ExtResource("35_202ut")
 [connection signal="body_entered" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/F - Target Ring/Area2D" to="Buttons/F - Target Ring" method="_on_area_2d_body_exited"]
 [connection signal="missed_beat" from="Buttons/V - Target Ring" to="." method="_on_v__target_ring_missed_beat"]
+[connection signal="body_entered" from="Buttons/V - Target Ring/Area2D" to="Buttons/V - Target Ring" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Buttons/V - Target Ring/Area2D" to="Buttons/V - Target Ring" method="_on_area_2d_body_exited"]
 [connection signal="missed_beat" from="Buttons/Space - Target Ring" to="." method="_on_space__target_ring_missed_beat"]
 [connection signal="body_entered" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Buttons/Space - Target Ring/Area2D" to="Buttons/Space - Target Ring" method="_on_area_2d_body_exited"]
